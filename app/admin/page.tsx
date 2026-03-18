@@ -75,7 +75,7 @@ export default function AdminPage() {
   // ----- KPIs -----
   const totalPaid = players.filter((p) => p.Payment_Status).length;
   const totalAlive = players.filter((p) => p.Alive_Status).length;
-  const totalCash = totalPaid * 10;
+  const totalCash = totalPaid * 5;
 
   // ----- Password Gate -----
   if (!authed) {
