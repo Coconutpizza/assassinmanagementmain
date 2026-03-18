@@ -37,7 +37,7 @@ export const translations = {
         failed: "Registration failed.",
         network: "Could not reach the server. Please try again later.",
       },
-      seasonNotice: "Season 1 is TEAMS ONLY, Duration: March 30 - April 13/20",
+      seasonNotice: "Season 1 DUOS, Duration: March 30 - April 13/20",
       groupSize: "2 membres",
       soloDisabled: "Solo registration is disabled for Season 1",
       availableTeams: "Available Teams 2 MEMBERS MAX (DUOS)",
