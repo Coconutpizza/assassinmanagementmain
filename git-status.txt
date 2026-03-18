@@ -1,0 +1,42 @@
+interactive rebase in progress; onto 1370f78
+Last command done (1 command done):
+   pick a62f9e9 # First commit: Senior Assassin Management app ready for launch
+No commands remaining.
+You are currently rebasing branch 'main' on '1370f78'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .gitignore
+	new file:   app/admin/page.tsx
+	new file:   app/dashboard/page.tsx
+	new file:   app/favicon.ico
+	new file:   app/globals.css
+	new file:   app/layout.tsx
+	new file:   app/leaderboard/page.tsx
+	new file:   app/page.tsx
+	new file:   app/rules/page.tsx
+	new file:   app/season/page.tsx
+	new file:   components/LanguageProvider.tsx
+	new file:   components/Navbar.tsx
+	new file:   gas/Code.gs
+	new file:   lib/api.ts
+	new file:   lib/translations.ts
+	new file:   next.config.ts
+	new file:   package-lock.json
+	new file:   package.json
+	new file:   postcss.config.mjs
+	new file:   public/file.svg
+	new file:   public/globe.svg
+	new file:   public/next.svg
+	new file:   public/vercel.svg
+	new file:   public/window.svg
+	new file:   tsconfig.json
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+	both added:      README.md
+
