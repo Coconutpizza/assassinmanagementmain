@@ -120,6 +120,7 @@ body {
 .badge-red   { background: #450a0a; color: var(--danger); }
 .badge-amber { background: #451a03; color: var(--warning); }
 .badge-indigo{ background: #1e3a8a; color: #93c5fd; }
+.badge-gray  { background: #27272a; color: #a1a1aa; }
 
 /* Removed pulse animations for formal theme */
 
