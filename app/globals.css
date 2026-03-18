@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0f1117;
+  --bg-card: #151821;
+  --bg-input: #0b0c10;
+  --border: #232533;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* Card */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+/* Input */
+.input {
+  width: 100%;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.input:focus {
+  border-color: var(--accent);
+}
+.input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--accent-hover); }
+.btn-primary:disabled { background: #1e3a8a; opacity: 0.6; cursor: not-allowed; }
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+.btn-outline:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+.btn-success {
+  background: #14532d;
+  color: var(--success);
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+}
+.btn-success:hover { background: #166534; }
+
+.btn-danger {
+  background: #450a0a;
+  color: var(--danger);
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+}
+.btn-danger:hover { background: #7f1d1d; }
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.badge-green { background: #064e3b; color: var(--success); }
+.badge-red   { background: #450a0a; color: var(--danger); }
+.badge-amber { background: #451a03; color: var(--warning); }
+.badge-indigo{ background: #1e3a8a; color: #93c5fd; }
+
+/* Removed pulse animations for formal theme */
+
+/* Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.data-table th {
+  text-align: left;
+  padding: 0.6rem 1rem;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+}
+.data-table td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #1e2130;
+  vertical-align: middle;
+}
+.data-table tr:last-child td { border-bottom: none; }
+.data-table tr:hover td { background: #1d2032; }
+
+/* KPI Card */
+.kpi-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+}
+.kpi-card .kpi-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+.kpi-card .kpi-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1;
+}
+
+/* Spinner */
+@keyframes spin { to { transform: rotate(360deg); } }
+.spinner {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+/* Nav */
+.nav {
+  background: rgba(15,17,23,0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
